@@ -93,7 +93,7 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
 
   //Whatsapp msg!!
   const encodedMessage = encodeURIComponent(orderDetails);
-const phoneNumber = "916375936089"; // Replace with your friend's dad's number (with country code)
+const phoneNumber = "919521189249"; // Replace with your friend's dad's number (with country code)
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
 window.open(whatsappLink, "_blank");
