@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshMart Grocery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>KOTA-MART</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+          <div class="product">
+            <img src="assets/download.jpg" alt="Fresh Tomatoes" />
+            <h3>Fresh Tomatoes</h3>
+            <p>₹30/kg</p>
+            <button
+              class="add-to-cart"
+              data-name="Fresh Tomatoes"
+              data-price="30"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <!-- More products later -->
+          <div class="product">
+            <img src="assets/OIP.jpg" alt=" Fresh Mangoes" />
+            <h3>Fresh Mangoes</h3>
+            <p>₹100/kg</p>
+            <button
+              class="add-to-cart"
+              data-name="Fresh Mangoes"
+              data-price="100"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- CART SECTION -->
+        <section class="cart-section">
+          <h2>Your Cart</h2>
+          <div id="cart-items">
+            <p>Your cart is empty.</p>
+          </div>
+          <h3 id="cart-total"></h3>
+          <button id="place-order" style="display: none">Place Order</button>
+        </section>
+
+        <!-- ORDER FORM -->
+        <section class="order-form">
+          <h2>Customer Details</h2>
+          <form id="order-form">
+            <input type="text" id="customer-name" placeholder="Name" required />
+            <input
+              type="tel"
+              id="customer-phone"
+              placeholder="Phone Number"
+              required
+            />
+            <textarea
+              id="customer-address"
+              placeholder="Delivery Address"
+              required
+            ></textarea>
+            <button type="submit">Confirm Order</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 FreshMart Grocery Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
